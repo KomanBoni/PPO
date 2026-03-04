@@ -5,14 +5,14 @@ class Human{
     public $prenom;
     public $age;
     public $sexe;
-    public $telephone;
+    public $poids;
 
-    public function __construct($nom, $prenom, $age, $sexe, $telephone){
+    public function __construct($nom, $prenom, $age, $sexe, $poids){
         $this->nom = $nom;
         $this->prenom = $prenom;
         $this->age = $age;
         $this->sexe = $sexe;
-        $this->telephone = $telephone;
+        $this->poids = $poids;
     }
 
     public function afficher(){
@@ -20,6 +20,6 @@ class Human{
         echo "prenom : " . $this->prenom . "\n";
         echo "age : " . $this->age . " ans\n";
         echo "sexe : " . $this->sexe . "\n";
-        echo "telephone : " . $this->telephone . "\n";
+        echo "poids : " . $this->poids . " kg\n";
     }
 }
